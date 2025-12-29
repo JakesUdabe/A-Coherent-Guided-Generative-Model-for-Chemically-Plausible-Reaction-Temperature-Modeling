@@ -1,0 +1,43 @@
+Fase 1: Preparación y Limpieza de Datos
+processed_data.py
+
+Propósito: Convierte los archivos originales del dataset ORD (formato Protobuf comprimido .gz) a un formato más manejable.
+
+Entrada: Archivos .gz en la carpeta data.
+
+Output: Archivos .jsonl.gz (JSON Lines comprimidos) dentro de una nueva carpeta llamada processed_data.
+
+parse_ord.py
+
+Propósito: Extrae información específica (SMILES de reactivos/productos, temperaturas y rendimientos) de los archivos JSONL.
+
+Entrada: Los archivos .jsonl.gz generados en el paso anterior.
+
+Output: Un único archivo CSV comprimido: ord_parsed_reactions.csv.gz.
+
+filter_data.py
+
+Propósito: Filtra el dataset para mantener solo las filas que tienen datos completos en las columnas clave (SMILES y temperatura).
+
+Entrada: ord_parsed_reactions.csv.gz.
+
+Output: ord_filtered_key_reactions.csv.gz.
+
+Fase 2: Normalización y Tokenización
+Normalizer.py
+
+Propósito: Convierte las temperaturas de Celsius a Kelvin y aplica una normalización MinMax (escalando los valores entre 0 y 1).
+
+Entrada: ord_filtered_key_reactions.csv.gz.
+
+Output: ord_normalized_key_reactions.csv.gz.
+
+structural_encoder.py
+
+Propósito: Canoniza los SMILES y los convierte en secuencias de tokens numéricos que el modelo puede entender.
+
+Entrada: ord_normalized_key_reactions.csv.gz.
+
+Output: * ord_tokenized_reactions.csv.gz (archivo final con los datos listos para el modelo).
+
+smiles_vocabulary.json (el diccionario de tokens utilizado).
