@@ -35,8 +35,6 @@ Instead of a heavily interdependent structure, each model's folder (e.g., `vae/`
 📊 Data Availability
 To keep this repository lightweight, the raw datasets (.csv), parsed Open Reaction Database (ORD) files, and training logs (.txt) are not included directly in this repository.
 
-The processed dataset and pre-trained model checkpoints (.pth) can be downloaded from: [Insert Zenodo/Drive/Figshare Link Here]
-
 Please place the downloaded data in the corresponding data/ directories as expected by the training scripts before running them.
 
 🚀 Getting Started
