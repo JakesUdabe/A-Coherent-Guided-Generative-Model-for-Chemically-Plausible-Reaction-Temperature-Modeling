@@ -32,7 +32,7 @@ Instead of a heavily interdependent structure, each model's folder (e.g., `vae/`
  ┃ ┗ 📂 hybrid/              # Self-contained CGGM-Hybrid implementation and training scripts
  ┣ 📂 evaluation/            # Scripts for chemical coherence, ablation studies, and figure generation (Fig 3, etc.)
  ┗ 📜 README.md
-```text
+```
 
 ## 📊 Data Availability
 To keep this repository lightweight, the raw datasets (.csv), parsed Open Reaction Database (ORD) files, and training logs (.txt) are not included directly in this repository.
