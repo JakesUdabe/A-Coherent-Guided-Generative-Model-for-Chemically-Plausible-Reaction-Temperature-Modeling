@@ -59,7 +59,7 @@ If you use this code or the associated models in your research, please cite our 
 Fragmento de código
 @article{cggm_temp_2026,
   title={A Coherent Guided Generative Model for Chemically Plausible Reaction Temperature Modeling},
-  author={[Your Name / Authors]},
+  author={[ Jakes Udabe]},
   journal={Artificial Intelligence Chemistry},
   year={2026},
   doi={[Insert DOI Here]}
