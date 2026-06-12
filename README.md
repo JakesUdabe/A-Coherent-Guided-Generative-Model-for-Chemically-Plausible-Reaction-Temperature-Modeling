@@ -32,12 +32,14 @@ Instead of a heavily interdependent structure, each model's folder (e.g., `vae/`
  ┃ ┗ 📂 hybrid/              # Self-contained CGGM-Hybrid implementation and training scripts
  ┣ 📂 evaluation/            # Scripts for chemical coherence, ablation studies, and figure generation (Fig 3, etc.)
  ┗ 📜 README.md
-📊 Data Availability
+```text
+
+## 📊 Data Availability
 To keep this repository lightweight, the raw datasets (.csv), parsed Open Reaction Database (ORD) files, and training logs (.txt) are not included directly in this repository.
 
 Please place the downloaded data in the corresponding data/ directories as expected by the training scripts before running them.
 
-🚀 Getting Started
+## 🚀 Getting Started
 1. Requirements
 Install the required dependencies:
 
@@ -51,7 +53,7 @@ Because the folders are self-contained, simply navigate to the model you wish to
 Bash
 cd models/hybrid
 python train_cggm_hybrid_simple.py --epochs 50 --batch_size 128
-📎 Citation
+## 📎 Citation
 If you use this code or the associated models in your research, please cite our work:
 
 Fragmento de código
